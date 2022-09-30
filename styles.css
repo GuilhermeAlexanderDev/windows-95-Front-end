@@ -1,0 +1,225 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Azul */
+/* #0000A8 */
+/* font-weight: bold; */
+/* cinza */
+/* #c0c7c8 */
+
+.flex{
+  display:flex ;
+}
+
+.tela {
+  background-color: #54a8a8;
+  cursor: url(https://www.pinclipart.com/picdir/big/187-1875933_picture-royalty-free-library-cursor-vector-aesthetic-windows.png), auto;
+}
+
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #c0c7c8;
+  height: 28px;
+  border-top: 1px solid #c0c7c8;
+  z-index: 1000;
+  box-shadow: inset -1px -1px 0 0 #87888f, inset 1px 1px 0 0 #ffffff;
+}
+.menu {
+  width:70px;
+  display: flex;
+  margin:0px 2px;
+  border: solid;
+  border-width: 2px;
+  border-bottom-color: #424242;
+  border-right-color: #424242;
+  border-left-color: #fff;
+  border-top-color: #fff;
+  background: silver;
+  color: #212529;
+  box-shadow: inset -1px -1px 0 0 silver, inset 1px 1px 0 0 #ffffff;
+  padding: 0;
+  font-size: 11px;
+}
+.menu:active{
+  border: 2px inset #fff;
+    background: silver;
+    color: #424242;
+    box-shadow: -1px -1px #000;
+  /* box-shadow: inset -80px -80px 0 0 #87888f, inset 1px 1px 0 0 #ffffff; */
+}
+.menu h3{
+  margin:4px 3px;
+}
+
+.menu img{
+  width:40px;
+  height:20px;
+}
+
+.line-white {
+  border-top: 1px solid #ffffff;
+  padding: 2px;
+  display: flex;
+}
+
+.cmd{
+ display: none;
+}
+.cmd.active{
+  display: block;
+}
+
+.cmd {
+  position: relative;
+  top:15%;
+  left:15%;
+  width:400px;
+  height:265px;
+  border: solid;
+  border-width: 2px;
+  border-bottom-color: #424242;
+  border-right-color: #424242;
+  border-left-color: #fff;
+  border-top-color: #fff;
+  background: silver;
+  color: #212529;
+}
+
+.confCmd{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.confCmd p{
+  text-align: left;
+}
+.menuJanela{
+  text-align: right;
+  margin-right: 2px;
+  margin-top: 2px;
+}
+
+.confCmd .menuJanela button{
+  text-align: center;
+  font-weight: bold;
+  width:25px;
+  height:20px;
+  border: none;
+  background: silver;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+}
+
+.confCmd button.exit:active{
+  box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a,
+    inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+}
+.confCmd div button.Minimizar:active{
+  box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a,
+    inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+}
+
+.cmd p{
+  margin-left:10px;
+  color:#000;
+}
+.cmd textarea{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:400px;
+  height:240px;
+  color:#fff;
+  background-color: #000000;
+  resize:none;
+  outline:none;
+  overflow-y: scroll;
+}
+
+.openMenu{
+  display:none;
+}
+.openMenu.open{
+  display: block;
+}
+
+.openMenu{
+  position: absolute;
+  bottom:28px;
+  width: 150px;
+  height: 150px;
+  background-color: silver;
+}
+
+.openMenu::after{
+  content: '';
+  position: absolute;
+  left:0;
+  top:0;
+  width:20px;
+  height:100%;
+  display: inline-block;
+  background-color: #87888f;
+  box-shadow: inset -1px -1px 0 0 #C0C7C8 , inset 1px 1px 0 0 #ffffff;
+  
+}
+
+.sofwere1{
+  position: relative;
+  display:flex;
+  width:100%;
+  height:30px;
+  margin:2px 2px 2px 0;
+  margin-left:20px;
+}
+.sofwere1 img{
+  width:38px;
+  height:35px;
+}
+.sofwere1 p{
+  margin:8px 0;
+}
+.sofwere1::before{
+  content: '>';
+  position: absolute;
+  top:7px;
+  right:5px;
+}
+.sofwere1:hover{
+  background-color: #0000A8;
+  color:#fff;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar{
+  width:16px;
+}
+::-webkit-scrollbar-corner {
+  background: silver;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+}
+::-webkit-scrollbar-track{
+  background-image: url('https://alexbsoft.github.io/win95.css/assets/background.bmp');
+}
+::-webkit-scrollbar-track-piece{
+  margin:1px;
+}
